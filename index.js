@@ -72,11 +72,11 @@ console.log(me)
 */
 
 const dice = function(randomDice){
-   randomDice = Math.floor(Math.random(1)*6)
-   console.log(randomDice)
+   randomDice = Math.floor(Math.random()*6)+1
+   return randomDice
 }
 
-dice()
+console.log(dice())
 
 /* Ex.2 
     Write a function called "whoIsBigger" which receives 2 numbers as parameters and returns the biggest one.
@@ -176,6 +176,71 @@ whatDayIsIt()
         values: [3, 3, 4]
     }
 */
+
+const rollTheDices = function(numberOfTimes){
+    numberOfTimes = dice()
+    console.log("Number of times: ", numberOfTimes)
+    if(numberOfTimes === 1){
+        n1 = dice()
+         let firstObject = {
+             sum: n1,
+             value: [n1]
+         }
+         console.log(firstObject)
+    } if(numberOfTimes === 2){
+        n1 = dice()
+        n2 = dice()
+        let secondObject = {
+            sum: n1+n2,
+            values: [n1,n2]
+        }
+        console.log(secondObject)
+    }if(numberOfTimes === 3){
+        n1 = dice()
+        n2 = dice()
+        n3 = dice()
+        let thirdObject = {
+            sum: n1+n2+n3,
+            values: [n1,n2,n3]
+        }
+        console.log(thirdObject)
+    }if(numberOfTimes === 4){
+        n1 = dice()
+        n2 = dice()
+        n3 = dice()
+        n4 = dice()
+        let fourthObject = {
+            sum: n1+n2+n3+n4,
+            values: [n1,n2,n3,n4]
+        } 
+        console.log(fourthObject)
+    }if(numberOfTimes === 5){
+        n1 = dice()
+        n2 = dice()
+        n3 = dice()
+        n4 = dice()
+        n5 = dice()
+        let fifthObject = {
+            sum: n1+n2+n3+n4+n5,
+            values: [n1,n2,n3,n4,n5]
+        }
+        console.log(fifthObject)
+    }if(numberOfTimes === 6){
+        n1 = dice()
+        n2 = dice()
+        n3 = dice()
+        n4 = dice()
+        n5 = dice()
+        n6 = dice()
+        let sixthObject = {
+            sum: n1+n2+n3+n4+n5+n6,
+            values: [n1,n2,n3,n4,n5,n6]
+        }
+        console.log(sixthObject)
+    }
+}
+
+rollTheDices()
 
 /* Ex.9
    Write a function called "howManyDays" which receives a date as a parameter and should return the number of days passed since that date.
