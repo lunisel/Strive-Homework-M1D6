@@ -56,6 +56,9 @@ console.log(me)
    Programmatically add to the object me an array called "skills", containing the programming languages you know right now.
 */
 
+me.skills = ["JavaScript"]
+console.log(me)
+
 /* Ex.G 
    Programmatically remove the last skill from the "skills" array inside the "me" object.
 */
