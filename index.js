@@ -246,6 +246,17 @@ rollTheDices()
    Write a function called "howManyDays" which receives a date as a parameter and should return the number of days passed since that date.
 */
 
+const howManyDays = function(randomDate){
+    let today = new Date()
+    let oneDay = 1000*60*60*24
+    let diffInTime = today.getTime() - randomDate.getTime()
+    let diffInDays = Math.round(diffInTime/oneDay)
+    console.log(diffInDays)
+
+}
+
+howManyDays(new Date("04/25/2021"))
+
 /* Ex.10
    Write a function called "isTodayMyBirthday" which should return true if today's your birthday, false otherwise.
 */
