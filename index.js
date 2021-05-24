@@ -261,6 +261,21 @@ howManyDays(new Date("04/25/2021"))
    Write a function called "isTodayMyBirthday" which should return true if today's your birthday, false otherwise.
 */
 
+const isTodayMyBirthday = function(yourBirthday){
+    let today = new Date()
+    let oneDay = 1000*60*60*24
+    let differenceTime = today.getTime() - yourBirthday.getTime()
+    let differenceDays = Math.round(differenceTime/oneDay)
+    if(differenceDays === 1){
+        console.log("Today is your birthday!!")
+    } else {
+        console.log("Today is not your birthday")
+    }
+}
+
+isTodayMyBirthday(new Date("2021/05/24"))
+isTodayMyBirthday(new Date("2021/08/04"))
+
 // JS Arrays // Objs
 // NOTE: movies array is defined at the end of this file!
 
