@@ -477,9 +477,47 @@ onlyTheTitles()
    Write a function called "onlyInThisMillennium" which returns only the movies produced in this millennium.
 */
 
+const onlyInThisMillennium = function(){
+    console.log("List of movies in this millennium:")
+    if(movies[0].Year >= 2000){
+        console.log("The Lord of the Rings: The Fellowship of the Ring")
+    } if (movies[1].Year >= 2000){
+        console.log("The Lord of the Rings: The Return of the King")
+    }if(movies[2].Year >= 2000){
+        console.log("The Lord of the Rings: The Two Towers")
+    } if (movies[3].Year >= 2000){
+        console.log("Lord of War")
+    }if(movies[4].Year >= 2000){
+        console.log("Lord of Dogtown")
+    } if (movies[5].Year >= 2000){
+        console.log("The Lord of the Rings")
+    } if (movies[6].Year >= 2000){
+        console.log("Lord of the Flies")
+    }if(movies[7].Year >= 2000){
+        console.log("The Lord of Salem")
+    } if (movies[8].Year >= 2000){
+        console.log("Greystoke: The Legend of Tarzan, Lord of the Apes")
+    }if (movies[9].Year >= 2000){
+        console.log("Lord of the Flies")
+    } if (movies[10].Year >= 2000){
+        console.log("The Avengers")
+    }if(movies[11].Year >= 2000){
+        console.log("Avengers: Infinity War")
+    }if (movies[12].Year >= 2000){
+        console.log("The Avengers: Age of Ultron")
+    }if(movies[13].Year >= 2000){
+        console.log("Avengers: Endgame")
+    }
+}
+onlyInThisMillennium()
+
 /* Ex.16 
     Write a function called "getMovieById" which receives an id as a parameter and returns the movie with the given id.
 */
+
+const getMovieById = function(id){
+
+}
 
 /* Ex.17
     Write a function called "sumAllTheYears" which returns the sum of all the years in which the movies provided have been produced.
