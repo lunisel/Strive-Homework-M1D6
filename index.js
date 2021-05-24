@@ -442,9 +442,36 @@ olderMovie()
     Write a function called "countMovies" which returns the number of movies contained in the array provided at the end of this file.
 */
 
+const countMovies = function(){
+    let totalMovies = movies.length
+    console.log("Movies in the array: ", totalMovies)
+}
+countMovies()
+
 /* Ex.14
     Write a function called "onlyTheTitles" which creates an array with just the titles of the movies provided in the array at the end of the file.
-*/
+*/7
+
+const onlyTheTitles = function(){
+    let allTitles = [
+        oneMovie = movies[0].Title,
+        twoMovie = movies[1].Title,
+        threeMovie = movies[2].Title,
+        fourMovie = movies[3].Title,
+        fiveMovie = movies[4].Title,
+        sixMovie = movies[5].Title,
+        sevenMovie = movies[6].Title,
+        eightMovie = movies[7].Title,
+        nineMovie = movies[8].Title,
+        tenMovie = movies[9].Title,
+        elevenMovie = movies[10].Title,
+        twelveMovie = movies[11].Title,
+        thirdteenMovie = movies[12].Title,
+        fourteenMovie = movies[13].Title
+    ]
+    console.log(allTitles)
+}
+onlyTheTitles()
 
 /* Ex.15
    Write a function called "onlyInThisMillennium" which returns only the movies produced in this millennium.
