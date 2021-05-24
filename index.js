@@ -63,10 +63,19 @@ console.log(me)
    Programmatically remove the last skill from the "skills" array inside the "me" object.
 */
 
+delete me.skills
+console.log(me)
+
 // JS Functions
 /* Ex.1
     Write a function called "dice"; it should randomize an integer number between 1 and 6.
 */
+
+const dice = function(){
+    Math.floor(Math.random(1)*6)
+}
+
+console.log(dice)
 
 /* Ex.2 
     Write a function called "whoIsBigger" which receives 2 numbers as parameters and returns the biggest one.
