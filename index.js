@@ -553,6 +553,32 @@ getMovieById(`tt0120737`)
     Write a function called "sumAllTheYears" which returns the sum of all the years in which the movies provided have been produced.
 */
 
+const summAllTheYears = function(){
+    allYears = [
+        oneMovie = movies[0].Year,
+        twoMovie = movies[1].Year,
+        threeMovie = movies[2].Year,
+        fourMovie = movies[3].Year,
+        fiveMovie = movies[4].Year,
+        sixMovie = movies[5].Year,
+        sevenMovie = movies[6].Year,
+        eightMovie = movies[7].Year,
+        nineMovie = movies[8].Year,
+        tenMovie = movies[9].Year,
+        elevenMovie = movies[10].Year,
+        twelveMovie = movies[11].Year,
+        thirdteenMovie = movies[12].Year,
+        fourteenMovie = movies[13].Year
+    ]
+    let stringsToNumbers = allYears.map(Number)
+    console.log(stringsToNumbers)
+    let sum = stringsToNumbers.reduce(function (a, b){
+        return a + b })
+    console.log(sum)
+}
+
+summAllTheYears()
+
 /* Ex.18
     Write a function called "searchByTitle" which receives a string as a parameter and returns all the movies which contain that string in the title.
 */
