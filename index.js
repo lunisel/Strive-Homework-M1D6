@@ -516,8 +516,38 @@ onlyInThisMillennium()
 */
 
 const getMovieById = function(id){
-
+    if(movies[0].imdbID === `${id}`){
+        console.log("The Lord of the Rings: The Fellowship of the Ring")
+    } if (movies[1].Year === `${id}`){
+        console.log("The Lord of the Rings: The Return of the King")
+    }if(movies[2].Year === `${id}`){
+        console.log("The Lord of the Rings: The Two Towers")
+    } if (movies[3].Year === `${id}`){
+        console.log("Lord of War")
+    }if(movies[4].Year === `${id}`){
+        console.log("Lord of Dogtown")
+    } if (movies[5].Year === `${id}`){
+        console.log("The Lord of the Rings")
+    } if (movies[6].Year === `${id}`){
+        console.log("Lord of the Flies")
+    }if(movies[7].Year === `${id}`){
+        console.log("The Lord of Salem")
+    } if (movies[8].Year === `${id}`){
+        console.log("Greystoke: The Legend of Tarzan, Lord of the Apes")
+    }if (movies[9].Year === `${id}`){
+        console.log("Lord of the Flies")
+    } if (movies[10].Year === `${id}`){
+        console.log("The Avengers")
+    }if(movies[11].Year === `${id}`){
+        console.log("Avengers: Infinity War")
+    }if (movies[12].Year === `${id}`){
+        console.log("The Avengers: Age of Ultron")
+    }if(movies[13].Year === `${id}`){
+        console.log("Avengers: Endgame")
+    }
 }
+
+getMovieById(`tt0120737`)
 
 /* Ex.17
     Write a function called "sumAllTheYears" which returns the sum of all the years in which the movies provided have been produced.
