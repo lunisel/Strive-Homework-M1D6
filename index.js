@@ -49,6 +49,9 @@ console.log(me)
     Programmatically remove the age property from the previously create object.
 */
 
+delete me.age
+console.log(me)
+
 /* Ex.F 
    Programmatically add to the object me an array called "skills", containing the programming languages you know right now.
 */
