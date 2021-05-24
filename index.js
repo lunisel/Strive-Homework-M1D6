@@ -140,8 +140,8 @@ onlyLetters("I have 1 dog")
 */
 
 const isThisAnEmail = function(email){
-   let re = /\S+@\S+\.\S+/;
-        return re.test(email);
+   let isEmail = /\S+@\S+\.\S+/;
+        return isEmail.test(email);
 }
 
 console.log(isThisAnEmail("luna942008@hotmail.it"))
@@ -150,6 +150,21 @@ console.log(isThisAnEmail("Llama"))
 /* Ex.7
    Write a function called "whatDayIsIt" that should return the current day of the week.
 */
+
+const whatDayIsIt = function(today){
+    today = new Date()
+    dayOfTheWeek = today.getDay()
+    if(dayOfTheWeek === 0){console.log("Today is Sunday!")}
+    if(dayOfTheWeek === 1){console.log("Today is Monday!")}
+    if(dayOfTheWeek === 2){console.log("Today is Tuesday!")}
+    if(dayOfTheWeek === 3){console.log("Today is Wednesday!")}
+    if(dayOfTheWeek === 4){console.log("Today is Thursday!")}
+    if(dayOfTheWeek === 5){console.log("Today is Friday!")}
+    if(dayOfTheWeek === 6){console.log("Today is Saturday!")}
+    if(dayOfTheWeek === 7){console.log("Today is Sunday!")}
+}
+
+whatDayIsIt()
 
 /* Ex.8
     Write a function called "rollTheDices" which receives a number as a parameter.
