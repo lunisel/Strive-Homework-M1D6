@@ -71,11 +71,12 @@ console.log(me)
     Write a function called "dice"; it should randomize an integer number between 1 and 6.
 */
 
-const dice = function(){
-    Math.floor(Math.random(1)*6)
+const dice = function(randomDice){
+   randomDice = Math.floor(Math.random(1)*6)
+   console.log(randomDice)
 }
 
-console.log(dice)
+dice()
 
 /* Ex.2 
     Write a function called "whoIsBigger" which receives 2 numbers as parameters and returns the biggest one.
