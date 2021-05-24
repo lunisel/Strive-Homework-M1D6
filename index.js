@@ -109,6 +109,21 @@ splitMe("My name is Luna")
     Write a function called "deleteOne" which receives a string and a boolean as parameters. If the boolean value is true it should return the string without the first letter, otherwise it should remove the last one from it.
 */
 
+const deleteOne = function(yourString,yourBoolean){
+    if(yourBoolean === true){
+        yourString = yourString.substring(1)
+        console.log(yourString)
+    } else {
+        let newArray = yourString.split("")
+        newArray.pop()
+        newString = newArray.join("")
+        console.log(newString)
+    }
+}
+
+deleteOne("Banana", true)
+deleteOne("Pinguin", false)
+
 /* Ex.5
    Write a function called "onlyLetters" which receives a string as a parameter and returns it removing all the digits.
    Ex.: onlyLetters("I have 4 dogs")  => returns "I have  dogs"
