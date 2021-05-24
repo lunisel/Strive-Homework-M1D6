@@ -571,7 +571,6 @@ const summAllTheYears = function(){
         fourteenMovie = movies[13].Year
     ]
     let stringsToNumbers = allYears.map(Number)
-    console.log(stringsToNumbers)
     let sum = stringsToNumbers.reduce(function (a, b){
         return a + b })
     console.log(sum)
@@ -583,15 +582,52 @@ summAllTheYears()
     Write a function called "searchByTitle" which receives a string as a parameter and returns all the movies which contain that string in the title.
 */
 
+const searchByTitle = function(string){
+    let newMoives = []
+    for (const movie of movies) {
+        if(movie.Title.includes(string))
+            newMoives.push(movie)
+    }
+    console.log(newMoives)
+}
+searchByTitle("Avengers")
+
 /* Ex.19
     Write a function called "searchAndDivide" which receives a string as a parameter and returns an object;
     this object should contain an array called "match", made by all the movies which contain the given string in the title,
     and another array "unmatch" with all the remaining ones.
 */
+const searchAndDivide = function(string){
+    let match = []
+    let unmach = []
+    
+    for (const movie of movies) {
+        if(movie.Title.includes(string))
+            match.push(movie)
+        else
+        unmach.push(movie)
+    }
+     return {match, unmach}
+}
+
+console.log(searchAndDivide("Lord"))
 
 /* Ex.20
    Write a function called "removeIndex" which receives a number as a parameter and returns the movies array without the element in the given position.
 */
+
+const removeIndex = function(number){
+    let match = []
+    let moviesLength = movies.length
+
+    for (let i=0; i< moviesLength; i++) {
+        if( i !== number)
+            match.push(movies[i])
+    }
+    console.log(match)
+}
+
+removeIndex(3)
 
 // [EXTRAS] JS Advanced
 
