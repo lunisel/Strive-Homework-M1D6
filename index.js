@@ -129,6 +129,12 @@ deleteOne("Pinguin", false)
    Ex.: onlyLetters("I have 4 dogs")  => returns "I have  dogs"
 */
 
+const onlyLetters = function(yourStringEx5){
+    let withNoDigits = yourStringEx5.replace(/[0-9]/g, '');
+    console.log(withNoDigits)
+}
+onlyLetters("I have 1 dog")
+
 /* Ex.6 
    Write a function called "isThisAnEmail" which receives a string as a parameter and returns true if the string is a valid email address.
 */
